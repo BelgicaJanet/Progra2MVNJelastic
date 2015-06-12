@@ -242,12 +242,12 @@
 													</a>												
 													<div class="product-info clearfix">
 														<h4 class="title">
-															<a href="#">T-SHIRT PRODUCT</a>
+															<a href="#">HELLBOY</a>
 														</h4>
 														<div class="details">
 																  <div class="product-price"> 
-																	 <span class="price-old">323</span> 
-																	 <span class="price-new">265</span> 
+																	 <span class="price-old">S/. 800</span> 
+																	 <span class="price-new">S/.500</span> 
 																  </div>
 															
 															<p class="by">
@@ -268,12 +268,12 @@
 												
 													<div class="product-info clearfix">
 														<h4 class="title">
-															<a href="#">T-SHIRT PRODUCT</a>
+															<a href="#">WOLVERINE</a>
 														</h4>
 														<div class="details">
 																  <div class="product-price"> 
-																	 <span class="price-old">323</span> 
-																	 <span class="price-new">265</span> 
+																	 <span class="price-old">S/.2.000</span> 
+																	 <span class="price-new">S/.1.500</span> 
 																  </div>
 															
 															<p class="by">
@@ -293,12 +293,12 @@
 													</a>													
 													<div class="product-info clearfix">
 														<h4 class="title">
-															<a href="#">T-SHIRT PRODUCT</a>
+															<a href="#">CAPITAN HARLOCK</a>
 														</h4>
 														<div class="details">
 																  <div class="product-price"> 
-																	 <span class="price-old">323</span> 
-																	 <span class="price-new">265</span> 
+																	 <span class="price-old">S/. 4.000</span> 
+																	 <span class="price-new">S/. 2.500</span> 
 																  </div>
 															
 															<p class="by">
@@ -318,12 +318,12 @@
 													</a>										
 													<div class="product-info clearfix">
 														<h4 class="title">
-															<a href="single.html">T-SHIRT PRODUCT</a>
+															<a href="single.html">SCORPIO</a>
 														</h4>
 														<div class="details">
 																  <div class="product-price"> 
-																	 <span class="price-old">323</span> 
-																	 <span class="price-new">265</span> 
+																	 <span class="price-old">S/. 323</span> 
+																	 <span class="price-new">S/. 265</span> 
 																  </div>
 															
 															<p class="by">
@@ -343,12 +343,12 @@
 													</a>												
 													<div class="product-info clearfix">
 														<h4 class="title">
-															<a href="#">T-SHIRT PRODUCT</a>
+															<a href="#">THE CROWN</a>
 														</h4>
 														<div class="details">
 																  <div class="product-price"> 
-																	 <span class="price-old">323</span> 
-																	 <span class="price-new">265</span> 
+																	 <span class="price-old">S/. 250</span> 
+																	 <span class="price-new">S/. 150</span> 
 																  </div>
 															
 															<p class="by">
@@ -368,12 +368,12 @@
 													</a>
 													<div class="product-info clearfix">
 														<h4 class="title">
-															<a href="single.html">T-SHIRT PRODUCT</a>
+															<a href="single.html">SPAWM</a>
 														</h4>
 														<div class="details">
 																  <div class="product-price"> 
-																	 <span class="price-old">323</span> 
-																	 <span class="price-new">265</span> 
+																	 <span class="price-old">S/.300</span> 
+																	 <span class="price-new">S/.150</span> 
 																  </div>
 															
 															<p class="by">
@@ -388,17 +388,17 @@
 													<a href="single.html" class="product-link clearfix">
 														<div class="ribbon special">SALE</div>
 														<div class="product-thumbnail">
-															<img src="<c:url value='/resources/img/placeholder/p6.jpg'/>" alt="" />
+															<img src="<c:url value='/resources/img/placeholder/p7.jpg'/>" alt="" />
 														</div>
 													</a>
 													<div class="product-info clearfix">
 														<h4 class="title">
-															<a href="single.html">T-SHIRT PRODUCT</a>
+															<a href="single.html">DIABLO III</a>
 														</h4>
 														<div class="details">
 																  <div class="product-price"> 
-																	 <span class="price-old">323</span> 
-																	 <span class="price-new">265</span> 
+																	 <span class="price-old">S/.330</span> 
+																	 <span class="price-new">S/.250</span> 
 																  </div>
 															
 															<p class="by">
@@ -413,17 +413,17 @@
 													<a href="single.html" class="product-link clearfix">
 														<div class="ribbon special">SALE</div>
 														<div class="product-thumbnail">
-														<img src="<c:url value='/resources/img/placeholder/p3.jpg'/>" alt="" />
+														<img src="<c:url value='/resources/img/placeholder/p8.jpg'/>" alt="" />
 														</div>
 													</a>												
 													<div class="product-info clearfix">
 														<h4 class="title">
-															<a href="single.html">T-SHIRT PRODUCT</a>
+															<a href="single.html">BATMAN</a>
 														</h4>
 														<div class="details">
 																  <div class="product-price"> 
-																	 <span class="price-old">323</span> 
-																	 <span class="price-new">265</span> 
+																	 <span class="price-old">S/.600</span> 
+																	 <span class="price-new">S/.265</span> 
 																  </div>
 															
 															<p class="by">

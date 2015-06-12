@@ -25,10 +25,10 @@ public class JpaConfig implements DisposableBean {
 		
     private static final String PROPERTY_NAME_DATABASE_DRIVER = "com.mysql.jdbc.Driver";
     //CAMBIAR EL NOMBRE DE LA BASE DE DATOS Y TAMBIEN EL USUARIO Y PASS SI ES NECESARIO
-    private static final String PROPERTY_NAME_DATABASE_URL = "jdbc:mysql://localhost:3306/bd_collection";
+    private static final String PROPERTY_NAME_DATABASE_URL = "jdbc:mysql://localhost:3306/collection";
    
     private static final String PROPERTY_NAME_DATABASE_USERNAME = "root";
-    private static final String PROPERTY_NAME_DATABASE_PASSWORD = " ";
+    private static final String PROPERTY_NAME_DATABASE_PASSWORD = "root";
     		
     
     @Bean(name="driverDatasource")
