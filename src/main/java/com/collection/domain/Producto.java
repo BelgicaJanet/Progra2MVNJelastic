@@ -32,7 +32,7 @@ public class Producto {
 	private String marca;
 	
 	@NotNull
-	@DateTimeFormat(pattern="YYYY/MM/dd")
+	@DateTimeFormat(pattern="dd/MM/yyyy")
 	@Temporal(TemporalType.DATE)
 	private Date fecregistro;
 	
