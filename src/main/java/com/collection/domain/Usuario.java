@@ -26,11 +26,11 @@ public class Usuario {
 	private long id;
 	
 	@NotNull
-	@Size(min=1,max=20,message="Insert User")
+	@Size(min=1,max=40,message="Insert User")
 	private String user;
 	
 	@NotNull
-	@Size(min=1,max=20,message="Inset Password")
+	@Size(min=1,max=40,message="Inset Password")
 	private String password;
 
 	public long getId() {

@@ -13,6 +13,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.format.annotation.DateTimeFormat.ISO;
 
 
 @Entity
@@ -32,7 +33,7 @@ public class Producto {
 	private String marca;
 	
 	@NotNull
-	@DateTimeFormat(pattern="dd/MM/yyyy")
+	@DateTimeFormat(pattern="dd/MM/yyyy", iso=ISO.DATE)
 	@Temporal(TemporalType.DATE)
 	private Date fecregistro;
 	
