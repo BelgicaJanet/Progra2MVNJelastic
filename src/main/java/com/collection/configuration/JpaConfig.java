@@ -28,7 +28,7 @@ public class JpaConfig implements DisposableBean {
     private static final String PROPERTY_NAME_DATABASE_URL = "jdbc:mysql://localhost:3306/collection";
    
     private static final String PROPERTY_NAME_DATABASE_USERNAME = "root";
-    private static final String PROPERTY_NAME_DATABASE_PASSWORD = "";
+    private static final String PROPERTY_NAME_DATABASE_PASSWORD = "root";
     		
     
     @Bean(name="driverDatasource")
