@@ -19,6 +19,7 @@
   <link rel="stylesheet" type="text/css" href="<c:url value='/resources/css/responsive.css'/>" media="screen">
   <link rel="stylesheet" type="text/css" href="<c:url value='/resources/css/animate.css'/>" media="screen">
   <link rel="stylesheet" type="text/css" href="<c:url value='/resources/css/color-scheme.css'/>" media="screen">
+  <link rel="stylesheet" type="text/css" href="<c:url value='/resources/css/basic.css'/>" >
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> 		
 	<!--<script>window.jQuery || document.write('<script src="<c:url value='/resources/js/jquery.min.js'/>"></script>');</script> 		 -->
@@ -199,40 +200,54 @@
 					</center>		 
 	<form:form method="post" action="createProduct.htm" commandName="producto">	
 		<center> 
-		<h2>Registrar un producto</h2>
-		<h3> 
-	<bR> <spring:message code="label.nombre"/>  
-		<form:input path="nombre"/><font color="red">  <form:errors path="nombre"/></font>
-		 <spring:message code="label.marca"/>   
-			 <form:select path="marca" > 
-						<form:option value="Marvel Legend">Marvel Legend</form:option>
-						<form:option value="Marvel Univers">Marvel Univers</form:option>
-						<form:option value="Pre-Legend">Pre-Legend</form:option>
-						<form:option value="Neca">Neca</form:option> 
-						<form:option value="Hot">Hot Toy</form:option> 
-						<form:option value="Hasbro">Hasbro</form:option> 
-						<form:option value="Mattel">Mattel</form:option> 
-						<form:option value="Bandai">Bandai</form:option> 
-						<form:option value="McFarlane">McFarlane Toys</form:option> 
-			</form:select>
-		 </h3>
+		<h2>Registrar un producto</h2><bR> 
+		
+	<h3>
+		<div class="label-message"><spring:message code="label.nombre"/></div>  
+		<form:input path="nombre" class="input-message"/><font color="red">  <form:errors path="nombre"/></font>	
+	</h3>
+	<h3>
+		<div class="label-message"><spring:message code="label.marca"/></div>   
+		<form:select path="marca" class="input-message"> 
+			<form:option value="Marvel Legend">Marvel Legend</form:option>
+			<form:option value="Marvel Univers">Marvel Univers</form:option>
+			<form:option value="Pre-Legend">Pre-Legend</form:option>
+			<form:option value="Neca">Neca</form:option> 
+			<form:option value="Hot">Hot Toy</form:option> 
+			<form:option value="Hasbro">Hasbro</form:option> 
+			<form:option value="Mattel">Mattel</form:option> 
+			<form:option value="Bandai">Bandai</form:option> 
+			<form:option value="McFarlane">McFarlane Toys</form:option> 
+		</form:select>
+	</h3>	
+		 
 				
-				  <h3> <br><spring:message code="label.fecregistro"/>  
-				  		<form:input  path="fecregistro"/>  <font color="red">  <form:errors path="fecregistro"/></font>
-				  		<spring:message code="label.costo"/>   
-				  		<form:input  path="costo" /> <font color="red">  <form:errors path="costo"/></font></br></h3>
+	<h3><br>  
+		<div class="label-message"><spring:message code="label.fecregistro"/></div>
+		<form:input  path="fecregistro" class="input-message"/>  <font color="red">  <form:errors path="fecregistro"/></font>
+	</h3>
+	
+	<h3><br>		
+		<div class="label-message"><spring:message code="label.costo"/></div>   
+		<form:input  path="costo" class="input-message" /> <font color="red">  <form:errors path="costo"/></font>
+	</h3>
 				  
-				  	<h3><br><spring:message code="label.tamano"/>   
-				  	<form:input path="tamano" /> <font color="red">  <form:errors path="tamano"/></font>
-				  	<spring:message code="label.cantidad"/>   
-				  	<form:input  path="cantidad"/> </h3><font color="red">  <form:errors path="cantidad"/></font>
-				  <h3> <br><spring:message code="label.descripcion"/>   
-				  	<br><form:textarea path="descripcion"/><font color="red">  <form:errors path="descripcion"/></font>
-
-				  </h3>
-				 <br>
-				   
-				  <input type="submit"  value="Guardar" style="padding: 5px 31px" >
+	<h3><br>
+		<div class="label-message"><spring:message code="label.tamano"/> </div>
+		<form:input path="tamano" class="input-message" /> <font color="red">  <form:errors path="tamano"/></font>
+	</h3>
+				  	
+	<h3><br>
+		<div class="label-message"><spring:message code="label.cantidad"/></div>
+		<form:input  path="cantidad" class="input-message" /><font color="red">  <form:errors path="cantidad"/></font>
+	</h3> 
+	<h3><br>
+		<div class="label-message"><spring:message code="label.descripcion"/></div>   
+		<form:textarea path="descripcion" class="input-message"/><font color="red">  <form:errors path="descripcion"/></font>
+	</h3>
+	<h3><br>
+		<input type="submit"  class="input-message" value="Guardar" style="padding: 5px 31px" >
+	</h3>	
 		</center>
 		</form:form>
 							</div>
