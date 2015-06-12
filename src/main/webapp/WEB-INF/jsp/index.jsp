@@ -234,7 +234,7 @@
 										<ul class="products-container product-grid carousel-list portrait ">
 											<li>
 												<div class="product">
-													<a href="single.html" class="product-link clearfix">
+													<a href="#" class="product-link clearfix">
 														<div class="ribbon special">SALE</div>
 														<div class="product-thumbnail">
 															<img src="<c:url value='/resources/img/placeholder/p1.jpg'/>" alt="" />
@@ -259,7 +259,7 @@
 											</li>
 											<li>
 												<div class="product">
-													<a href="single.html" class="product-link clearfix">
+													<a href="#" class="product-link clearfix">
 														<div class="ribbon special">SALE</div>
 														<div class="product-thumbnail">
 														<img src="<c:url value='/resources/img/placeholder/p2.jpg'/>" alt="" />
@@ -318,7 +318,7 @@
 													</a>										
 													<div class="product-info clearfix">
 														<h4 class="title">
-															<a href="single.html">SCORPIO</a>
+															<a href="#">SCORPIO</a>
 														</h4>
 														<div class="details">
 																  <div class="product-price"> 
@@ -368,7 +368,7 @@
 													</a>
 													<div class="product-info clearfix">
 														<h4 class="title">
-															<a href="single.html">SPAWM</a>
+															<a href="#">SPAWM</a>
 														</h4>
 														<div class="details">
 																  <div class="product-price"> 
@@ -385,7 +385,7 @@
 											</li>
 											<li>
 												<div class="product">
-													<a href="single.html" class="product-link clearfix">
+													<a href="#" class="product-link clearfix">
 														<div class="ribbon special">SALE</div>
 														<div class="product-thumbnail">
 															<img src="<c:url value='/resources/img/placeholder/p7.jpg'/>" alt="" />
@@ -393,7 +393,7 @@
 													</a>
 													<div class="product-info clearfix">
 														<h4 class="title">
-															<a href="single.html">DIABLO III</a>
+															<a href="#">DIABLO III</a>
 														</h4>
 														<div class="details">
 																  <div class="product-price"> 
@@ -410,7 +410,7 @@
 											</li>
 											<li>
 												<div class="product">
-													<a href="single.html" class="product-link clearfix">
+													<a href="#" class="product-link clearfix">
 														<div class="ribbon special">SALE</div>
 														<div class="product-thumbnail">
 														<img src="<c:url value='/resources/img/placeholder/p8.jpg'/>" alt="" />
@@ -418,7 +418,7 @@
 													</a>												
 													<div class="product-info clearfix">
 														<h4 class="title">
-															<a href="single.html">BATMAN</a>
+															<a href="#">BATMAN</a>
 														</h4>
 														<div class="details">
 																  <div class="product-price"> 
