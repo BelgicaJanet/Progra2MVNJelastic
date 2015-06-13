@@ -29,7 +29,8 @@
 	<script src="<c:url value='/resources/js/bootstrap.min.js'/>"></script> 
 	<script src="<c:url value='/resources/js/package.min.js'/>"></script> 
 	<script src="<c:url value='/resources/js/jquery.tweet.js'/>"></script> 
-	<script src="<c:url value='/resources/js/scripts.js'/>"></script> 	 	
+	<script src="<c:url value='/resources/js/scripts.js'/>"></script>
+	<script src="<c:url value='/resources/js/peticiones.js'/>"></script> 	 	
 	</head>
 	<body>
 		
@@ -190,11 +191,8 @@
 						<center>
 			<table>
 			
-			
-		<a href="<c:url value='/findProduct?id=1'/>"><spring:message code="label.findbyid"/></a>
-		<div>${producto.nombre}</div>	
-				
-		
+		<input type="text" id="id-a-buscar" >	
+	    <div onclick="buscarProducto()"><spring:message code="label.findbyid"/></div>
         
     </table>				
 					</center>
@@ -207,47 +205,24 @@
 		
 	<h3>
 		<div class="label-message"><spring:message code="label.nombre"/></div>  
-		<form:input path="nombre" class="input-message"/><font color="red">  <form:errors path="nombre"/></font>	
+		<div id="name" class="input-message"></div>	
 	</h3>
-	<h3>
-		<div class="label-message"><spring:message code="label.marca"/></div>   
-		<form:select path="marca" class="input-message"> 
-			<form:option value="Marvel Legend">Marvel Legend</form:option>
-			<form:option value="Marvel Univers">Marvel Univers</form:option>
-			<form:option value="Pre-Legend">Pre-Legend</form:option>
-			<form:option value="Neca">Neca</form:option> 
-			<form:option value="Hot">Hot Toy</form:option> 
-			<form:option value="Hasbro">Hasbro</form:option> 
-			<form:option value="Mattel">Mattel</form:option> 
-			<form:option value="Bandai">Bandai</form:option> 
-			<form:option value="McFarlane">McFarlane Toys</form:option> 
-		</form:select>
-	</h3>	
-		 
-				
-	<h3><br>  
-		<div class="label-message"><spring:message code="label.fecregistro"/></div>
-		<form:input  path="fecregistro" class="input-message"/>  <font color="red">  <form:errors path="fecregistro"/></font>
+	
+	<h3><br>
+		<div class="label-message"><spring:message code="label.descripcion"/></div>   
+		<div id="description" class="input-message"></div>
 	</h3>
 	
 	<h3><br>		
 		<div class="label-message"><spring:message code="label.costo"/></div>   
-		<form:input  path="costo" class="input-message" /> <font color="red">  <form:errors path="costo"/></font>
+		<form:input id="cost"  path="costo" class="input-message" /> <font color="red">  <form:errors path="costo"/></font>
 	</h3>
-				  
-	<h3><br>
-		<div class="label-message"><spring:message code="label.tamano"/> </div>
-		<form:input path="tamano" class="input-message" /> <font color="red">  <form:errors path="tamano"/></font>
-	</h3>
-				  	
+	
 	<h3><br>
 		<div class="label-message"><spring:message code="label.cantidad"/></div>
-		<form:input  path="cantidad" class="input-message" /><font color="red">  <form:errors path="cantidad"/></font>
+		<form:input id="cant" path="cantidad" class="input-message" /><font color="red">  <form:errors path="cantidad"/></font>
 	</h3> 
-	<h3><br>
-		<div class="label-message"><spring:message code="label.descripcion"/></div>   
-		<form:textarea path="descripcion" class="input-message"/><font color="red">  <form:errors path="descripcion"/></font>
-	</h3>
+				  	
 	<h3><br>
 		<input type="submit"  class="input-message" value="<spring:message code="label.updateproduct"/>" style="padding: 5px 31px" >
 	</h3>	

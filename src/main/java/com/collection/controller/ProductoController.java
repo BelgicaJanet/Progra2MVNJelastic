@@ -7,7 +7,6 @@ import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -23,6 +22,7 @@ import com.collection.service.ManageClienteService;
 import com.collection.service.ManageProductoService;
 import com.collection.service.ManageProveedorService;
 import com.collection.service.ManageUsuarioService;
+import com.google.gson.Gson;
 
 import java.util.Properties;
 
@@ -68,11 +68,11 @@ public class ProductoController {
 			
 			@RequestMapping(value = "/findProduct",method=RequestMethod.GET)
 			public ModelAndView findProduct(@RequestParam("id") String id) {
-				ModelAndView mv = new ModelAndView("ActualizarStock");
+				ModelAndView mv = new ModelAndView("JsonResult");
 				Producto producto=this.manageProductoService.find(Long.parseLong(id));
-				mv.addObject("producto",producto);
+				mv.addObject("producto",new Gson().toJson(producto));
 		        return mv;
-		    }
+			}
 				
 		    @RequestMapping(value = {"/createProduct"}, method = RequestMethod.POST)
 			public String addProduct(@ModelAttribute("producto") @Valid Producto producto,BindingResult result, Map model) {

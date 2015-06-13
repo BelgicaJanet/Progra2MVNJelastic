@@ -1,5 +1,6 @@
 package com.collection.domain;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import javax.persistence.Entity;
@@ -18,7 +19,7 @@ import org.springframework.format.annotation.DateTimeFormat.ISO;
 
 @Entity
 @Table(name="Producto")
-public class Producto {
+public class Producto implements Serializable{
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)	
@@ -113,6 +114,14 @@ public class Producto {
 
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
+	}
+
+	@Override
+	public String toString() {
+		return "Producto [id=" + id + ", nombre=" + nombre + ", marca=" + marca
+				+ ", fecregistro=" + fecregistro + ", costo=" + costo
+				+ ", tamano=" + tamano + ", cantidad=" + cantidad
+				+ ", descripcion=" + descripcion + "]";
 	}
 	
 	
