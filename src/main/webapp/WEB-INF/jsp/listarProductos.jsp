@@ -29,8 +29,7 @@
 	<script src="<c:url value='/resources/js/bootstrap.min.js'/>"></script> 
 	<script src="<c:url value='/resources/js/package.min.js'/>"></script> 
 	<script src="<c:url value='/resources/js/jquery.tweet.js'/>"></script> 
-	<script src="<c:url value='/resources/js/scripts.js'/>"></script>
-	<script src="<c:url value='/resources/js/peticiones.js'/>"></script> 	 	
+	<script src="<c:url value='/resources/js/scripts.js'/>"></script> 	 	
 	</head>
 	<body>
 		
@@ -103,7 +102,7 @@
 						<div class="inner"> 	
 						<!-- main menu --> 	
 							<ul class="main-menu menu visible-lg">
- 		<li class="active"> 
+ 								<li class="active"> 
  									<a href="#"><i class="icon-home"></i></a>
  								</li> 	
  								<li> 	
@@ -190,46 +189,35 @@
 							<!-- MAIN CONTENT -->
 							<div class="col-xs-12 col-sm-8 col-lg-9 main">
 							<div class="section">
-						<center>
-			<table>
-			
-		<input type="text" id="id-a-buscar" >	
-	    <div onclick="buscarProducto()"><spring:message code="label.findbyid"/></div>
-        
+				
+			<table class="table"  >
+		<tr align="center" >
+        		<td><spring:message code="label.listName"/></td>
+        		<td><spring:message code="label.listBrand"/></td>
+        		<td><spring:message code="label.listDate"/></td>
+        		<td><spring:message code="label.listCost"/></td>
+        		<td><spring:message code="label.listSize"/></td>
+        		<td><spring:message code="label.listCount"/></td>
+        		<td><spring:message code="label.listDescription"/></td>
+        	</tr>
+        <c:forEach items="${items}" var="item">
+        		
+            <tr>
+                <td>${item.nombre}</td>
+                <td>${item.marca}</td>
+                <td>${item.fecregistro}</td>
+        		<td>${item.costo}</td>
+        		<td>${item.tamano}</td>
+        		<td>${item.cantidad}</td>
+        		<td>${item.descripcion}</td>
+                
+            </tr>
+     
+        </c:forEach>
     </table>				
-					</center>
+				
 					
-					
-							 
-	<form:form method="post" action="updateProduct.htm" commandName="producto">	
-		<center> 
-		<h2><spring:message code="label.updateproduct"/></h2><bR> 
-		
-	<h3>
-		<div class="label-message"><spring:message code="label.nombre"/></div>  
-		<div id="name" class="input-message"></div>	
-	</h3>
-	
-	<h3><br>
-		<div class="label-message"><spring:message code="label.descripcion"/></div>   
-		<div id="description" class="input-message"></div>
-	</h3>
-	
-	<h3><br>		
-		<div class="label-message"><spring:message code="label.costo"/></div>   
-		<form:input id="cost"  path="costo" class="input-message" /> <font color="red">  <form:errors path="costo"/></font>
-	</h3>
-	
-	<h3><br>
-		<div class="label-message"><spring:message code="label.cantidad"/></div>
-		<form:input id="cant" path="cantidad" class="input-message" /><font color="red">  <form:errors path="cantidad"/></font>
-	</h3> 
-				  	
-	<h3><br>
-		<input type="submit"  class="input-message" value="<spring:message code="label.updateproduct"/>" style="padding: 5px 31px" >
-	</h3>	
-		</center>
-		</form:form>
+
 							</div>
 						</div>
 						<!-- MAIN CONTENT -->

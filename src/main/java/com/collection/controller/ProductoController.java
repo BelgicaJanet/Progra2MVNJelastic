@@ -50,12 +50,19 @@ public class ProductoController {
 			@RequestMapping(value = "/RegistrarProducto",method=RequestMethod.GET)
 			public ModelAndView indexProduct() {
 		        ModelAndView result = new ModelAndView("RegistrarProducto");
-		        //Se hace un select * from alumno y lo envia
-		        result.addObject("items", this.manageProductoService.getAll());
-		        //Se mapea el formulario para registrar un alumno
 		        result.addObject("producto",new Producto());
 		        return result;
 		    }
+			
+			@RequestMapping(value = "/ListarProductos",method=RequestMethod.GET)
+			public ModelAndView listProduct() {
+		        ModelAndView result = new ModelAndView("listarProductos");
+		        //Se hace un select * from alumno y lo envia
+		        result.addObject("items", this.manageProductoService.getAll());
+		        return result;
+		    }
+			
+		
 			
 			@RequestMapping(value = "/deleteProduct/{id}")
 			public String deleteProduct(@PathVariable(value="id")String id) {

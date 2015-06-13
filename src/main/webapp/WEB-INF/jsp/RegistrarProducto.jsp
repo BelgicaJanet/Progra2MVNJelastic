@@ -104,14 +104,16 @@
 							<ul class="main-menu menu visible-lg">
  								<li class="active"> 
  									<a href="#"><i class="icon-home"></i></a>
- 								</li>  	
+ 								</li> 	
  								<li> 	
- 									<a href="RegistrarProducto.htm"> Producto</a> 
+ 									<a href="RegistrarProducto.htm"> <spring:message code="label.productT"/></a> 
  								</li> 
-								<li><a href="RegistrarProveedor.htm"> Proveedores</a></li> 
-								<li><a href="ActualizarStock.htm">Actualizar Stock</a></li> 	
-								<li><a href="Enviar.htm">Contactenos</a></li> 
+								<li><a href="RegistrarProveedor.htm"> <spring:message code="label.providerT"/></a></li> 
+								<li><a href="ListarProductos.htm"><spring:message code="label.listProductT"/></a></li> 
+								<li><a href="ActualizarStock.htm"><spring:message code="label.actualizarStockT"/></a></li> 	
+								<li><a href="Enviar.htm"><spring:message code="label.contactT"/></a></li> 
 
+						
 							</ul> 	
 								<!-- /main menu --> 
 						</div> 	
@@ -187,16 +189,7 @@
 							<!-- MAIN CONTENT -->
 							<div class="col-xs-12 col-sm-8 col-lg-9 main">
 							<div class="section">
-						<center>
-			<table>
-        <c:forEach items="${items}" var="item">
-            <tr>
-                <td>${item.nombre}, ${item.marca}</td>
-                <td><a href="<c:url value='/deleteProduct/${item.id}'/>"><spring:message code="label.delete"/></a></td>
-            </tr>
-        </c:forEach>
-    </table>				
-					</center>		 
+
 	<form:form method="post" action="createProduct.htm" commandName="producto">	
 		<center> 
 		<h2>Registrar un producto</h2><bR> 
