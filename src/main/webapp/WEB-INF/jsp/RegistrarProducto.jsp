@@ -193,7 +193,6 @@
             <tr>
                 <td>${item.nombre}, ${item.marca}</td>
                 <td><a href="<c:url value='/deleteProduct/${item.id}'/>"><spring:message code="label.delete"/></a></td>
-                <td><a href="<c:url value='/findProduct?id=${item.id}'/>"><spring:message code="label.edit"/></a></td>
             </tr>
         </c:forEach>
     </table>				
