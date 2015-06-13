@@ -111,6 +111,7 @@
  									<a href="RegistrarProducto.htm"> Producto</a> 
  								</li> 
 								<li><a href="RegistrarProveedor.htm"> Proveedores</a></li> 
+								<li><a href="ListarProductos.htm">Lista de Producto</a></li> 
 								<li><a href="ActualizarStock.htm">Actualizar Stock</a></li> 	
 								<li><a href="Enviar.htm">Contactenos</a></li> 
 

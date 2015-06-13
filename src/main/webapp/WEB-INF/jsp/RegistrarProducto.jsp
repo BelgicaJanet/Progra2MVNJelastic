@@ -109,6 +109,7 @@
  									<a href="RegistrarProducto.htm"> Producto</a> 
  								</li> 
 								<li><a href="RegistrarProveedor.htm"> Proveedores</a></li> 
+								<li><a href="ListarProductos.htm">Lista de Producto</a></li> 
 								<li><a href="ActualizarStock.htm">Actualizar Stock</a></li> 	
 								<li><a href="Enviar.htm">Contactenos</a></li> 
 
@@ -187,17 +188,7 @@
 							<!-- MAIN CONTENT -->
 							<div class="col-xs-12 col-sm-8 col-lg-9 main">
 							<div class="section">
-						<center>
-			<table>
-        <c:forEach items="${items}" var="item">
-            <tr>
-                <td>${item.nombre}, ${item.marca}</td>
-                <td><a href="<c:url value='/deleteProduct/${item.id}'/>"><spring:message code="label.delete"/></a></td>
-                <td><a href="<c:url value='/findProduct?id=${item.id}'/>"><spring:message code="label.edit"/></a></td>
-            </tr>
-        </c:forEach>
-    </table>				
-					</center>		 
+				 
 	<form:form method="post" action="createProduct.htm" commandName="producto">	
 		<center> 
 		<h2>Registrar un producto</h2><bR> 
