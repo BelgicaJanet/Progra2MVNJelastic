@@ -108,17 +108,10 @@
  								<li class="active"> 
  									<a href="#"><i class="icon-home"></i></a>
  								</li> 
- 								<li> 
- 									<a href="#">Figuritas Tipo A</a> 
- 									<ul>
- 										<li><a href="#">Figuritas Tipo A.1</a></li>
- 										<li><a href="#">Figuritas Tipo A.2</a></li> 	
- 									</ul> 	
- 								</li> 	
- 								<li><a href="#">Figuritas Tipo B</a> </li> 
-								<li><a href="#">Figuritas Tipo C</a></li> 
-								<li><a href="#">Figuritas Tipo D</a></li> 	
-								<li><a href="#">Figuritas Tipo E</a></li> 	
+ 								<li> <a href="#">HOT TOYS</a></li> 	
+ 								<li><a href="#">MCFARLINE</a> </li> 
+								<li><a href="#">NECA</a></li> 
+									
 
 							</ul> 		
 								<!-- /main menu --> 
@@ -228,18 +221,22 @@
 										</ul>
 									</div>
 									<!-- /carousel control nav direction -->
+																	
 									
 									<!-- carousel wrapper -->
 									<div class="carousel-wrapper row" data-minitems="1" data-maxitems="4" data-loop="true" data-autoplay="false" data-slideshow-speed="3000" data-speed="300">
 										<ul class="products-container product-grid carousel-list portrait ">
 											<li>
 												<div class="product">
-													<a href="#" class="product-link clearfix">
+													<a href="http://www.mwctoys.com/images/review_hthellboy_11.jpg" class="product-link clearfix without-caption"  target="_blank" onClick="window.open(this.href, this.target, 'width=274,height=415'); return false;"> 
 														<div class="ribbon special">SALE</div>
 														<div class="product-thumbnail">
 															<img src="<c:url value='/resources/img/placeholder/p1.jpg'/>" alt="" />
 														</div>
-													</a>												
+													</a>	
+
+
+
 													<div class="product-info clearfix">
 														<h4 class="title">
 															<a href="#">HELLBOY</a>
@@ -249,6 +246,8 @@
 																	 <span class="price-old">S/. 800</span> 
 																	 <span class="price-new">S/.500</span> 
 																  </div>
+
+																  
 															
 															<p class="by">
 															<img src="<c:url value='/resources/img/stars-5.png'/>" alt="" />
@@ -259,7 +258,7 @@
 											</li>
 											<li>
 												<div class="product">
-													<a href="#" class="product-link clearfix">
+													<a href="http://www.hottoys.com.hk/photos/PD1413524886rbd.jpg?1413628700718" class="product-link clearfix" target="_blank" onClick="window.open(this.href, this.target, 'width=274,height=415'); return false;"> 
 														<div class="ribbon special">SALE</div>
 														<div class="product-thumbnail">
 														<img src="<c:url value='/resources/img/placeholder/p2.jpg'/>" alt="" />
@@ -285,7 +284,7 @@
 											</li>
 											<li>
 												<div class="product">
-													<a href="#" class="product-link clearfix">
+													<a href="http://www.edicioncoleccionista.com/wp-content/uploads/2013/12/PD13826070330I2.jpg" class="product-link clearfix"target="_blank" onClick="window.open(this.href, this.target, 'width=274,height=415'); return false;"> 
 														<div class="ribbon special">SALE</div>
 														<div class="product-thumbnail">
 														<img src="<c:url value='/resources/img/placeholder/p3.jpg'/>" alt="" />
@@ -310,7 +309,7 @@
 											</li>
 											<li>
 												<div class="product">
-													<a href="single.html" class="product-link clearfix">
+													<a href="http://news.toyark.com/wp-content/uploads/sites/4/2013/01/Mortal-Kombat-Scorpion-EXCLUSIVE-Premium-Format-Statue-1_1358868920.jpg" class="product-link clearfix"class="product-link clearfix"target="_blank" onClick="window.open(this.href, this.target, 'width=274,height=415'); return false;"> 
 														<div class="ribbon special">SALE</div>
 														<div class="product-thumbnail">
 														<img src="<c:url value='/resources/img/placeholder/p4.jpg'/>" alt="" />
@@ -335,7 +334,7 @@
 											</li>
 											<li>
 												<div class="product">
-													<a href="#" class="product-link clearfix">
+													<a href="http://mm3.vistoenpantalla.com/imagenes-productos/figura-el-cuervo-45-cms-con-sonido-nec-large2.jpg" class="product-link clearfix"class="product-link clearfix" target="_blank" onClick="window.open(this.href, this.target, 'width=274,height=415'); return false;"> 
 														<div class="ribbon special">SALE</div>
 														<div class="product-thumbnail">
 														<img src="<c:url value='/resources/img/placeholder/p5.jpg'/>" alt="" />
@@ -360,7 +359,7 @@
 											</li>
 											<li>
 												<div class="product">
-													<a href="#" class="product-link clearfix">
+													<a href="http://www.spawn.com/news/images/curse_statue_green_au_01_cl.jpg" class="product-link clearfix" target="_blank" onClick="window.open(this.href, this.target, 'width=274,height=415'); return false;"> 
 														<div class="ribbon special">SALE</div>
 														<div class="product-thumbnail">
 															<img src="<c:url value='/resources/img/placeholder/p6.jpg'/>" alt="" />
@@ -385,7 +384,7 @@
 											</li>
 											<li>
 												<div class="product">
-													<a href="#" class="product-link clearfix">
+													<a href="http://actionfan.net/wp-content/uploads/2014/05/Diablo-III-Diablo-Deluxe-Figure-001.jpg?e9bb92" class="product-link clearfix" target="_blank" onClick="window.open(this.href, this.target, 'width=274,height=415'); return false;"> 
 														<div class="ribbon special">SALE</div>
 														<div class="product-thumbnail">
 															<img src="<c:url value='/resources/img/placeholder/p7.jpg'/>" alt="" />
@@ -410,7 +409,7 @@
 											</li>
 											<li>
 												<div class="product">
-													<a href="#" class="product-link clearfix">
+													<a href="https://d3ieicw58ybon5.cloudfront.net/ex/506.506/shop/product/6439354233e84b4598d922da3f018a28.jpg" class="product-link clearfix" target="_blank" onClick="window.open(this.href, this.target, 'width=274,height=415'); return false;">
 														<div class="ribbon special">SALE</div>
 														<div class="product-thumbnail">
 														<img src="<c:url value='/resources/img/placeholder/p8.jpg'/>" alt="" />
