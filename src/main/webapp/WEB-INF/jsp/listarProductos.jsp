@@ -102,7 +102,7 @@
 						<div class="inner"> 	
 						<!-- main menu --> 	
 							<ul class="main-menu menu visible-lg">
- 		<li class="active"> 
+ 								<li class="active"> 
  									<a href="#"><i class="icon-home"></i></a>
  								</li> 	
  								<li> 	
@@ -189,72 +189,35 @@
 							<!-- MAIN CONTENT -->
 							<div class="col-xs-12 col-sm-8 col-lg-9 main">
 							<div class="section">
-						<center>
-			<table>
-			
-			
-		<a href="<c:url value='/findProduct?id=1'/>"><spring:message code="label.findbyid"/></a>
-		<div>${producto.nombre}</div>	
 				
-		
-        
+			<table class="table"  >
+		<tr align="center" >
+        		<td><spring:message code="label.listName"/></td>
+        		<td><spring:message code="label.listBrand"/></td>
+        		<td><spring:message code="label.listDate"/></td>
+        		<td><spring:message code="label.listCost"/></td>
+        		<td><spring:message code="label.listSize"/></td>
+        		<td><spring:message code="label.listCount"/></td>
+        		<td><spring:message code="label.listDescription"/></td>
+        	</tr>
+        <c:forEach items="${items}" var="item">
+        		
+            <tr>
+                <td>${item.nombre}</td>
+                <td>${item.marca}</td>
+                <td>${item.fecregistro}</td>
+        		<td>${item.costo}</td>
+        		<td>${item.tamano}</td>
+        		<td>${item.cantidad}</td>
+        		<td>${item.descripcion}</td>
+                
+            </tr>
+     
+        </c:forEach>
     </table>				
-					</center>
-					
-					
-							 
-	<form:form method="post" action="updateProduct.htm" commandName="producto">	
-		<center> 
-		<h2><spring:message code="label.updateproduct"/></h2><bR> 
-		
-	<h3>
-		<div class="label-message"><spring:message code="label.nombre"/></div>  
-		<form:input path="nombre" class="input-message"/><font color="red">  <form:errors path="nombre"/></font>	
-	</h3>
-	<h3>
-		<div class="label-message"><spring:message code="label.marca"/></div>   
-		<form:select path="marca" class="input-message"> 
-			<form:option value="Marvel Legend">Marvel Legend</form:option>
-			<form:option value="Marvel Univers">Marvel Univers</form:option>
-			<form:option value="Pre-Legend">Pre-Legend</form:option>
-			<form:option value="Neca">Neca</form:option> 
-			<form:option value="Hot">Hot Toy</form:option> 
-			<form:option value="Hasbro">Hasbro</form:option> 
-			<form:option value="Mattel">Mattel</form:option> 
-			<form:option value="Bandai">Bandai</form:option> 
-			<form:option value="McFarlane">McFarlane Toys</form:option> 
-		</form:select>
-	</h3>	
-		 
 				
-	<h3><br>  
-		<div class="label-message"><spring:message code="label.fecregistro"/></div>
-		<form:input  path="fecregistro" class="input-message"/>  <font color="red">  <form:errors path="fecregistro"/></font>
-	</h3>
-	
-	<h3><br>		
-		<div class="label-message"><spring:message code="label.costo"/></div>   
-		<form:input  path="costo" class="input-message" /> <font color="red">  <form:errors path="costo"/></font>
-	</h3>
-				  
-	<h3><br>
-		<div class="label-message"><spring:message code="label.tamano"/> </div>
-		<form:input path="tamano" class="input-message" /> <font color="red">  <form:errors path="tamano"/></font>
-	</h3>
-				  	
-	<h3><br>
-		<div class="label-message"><spring:message code="label.cantidad"/></div>
-		<form:input  path="cantidad" class="input-message" /><font color="red">  <form:errors path="cantidad"/></font>
-	</h3> 
-	<h3><br>
-		<div class="label-message"><spring:message code="label.descripcion"/></div>   
-		<form:textarea path="descripcion" class="input-message"/><font color="red">  <form:errors path="descripcion"/></font>
-	</h3>
-	<h3><br>
-		<input type="submit"  class="input-message" value="<spring:message code="label.updateproduct"/>" style="padding: 5px 31px" >
-	</h3>	
-		</center>
-		</form:form>
+					
+
 							</div>
 						</div>
 						<!-- MAIN CONTENT -->

@@ -50,12 +50,19 @@ public class ProductoController {
 			@RequestMapping(value = "/RegistrarProducto",method=RequestMethod.GET)
 			public ModelAndView indexProduct() {
 		        ModelAndView result = new ModelAndView("RegistrarProducto");
-		        //Se hace un select * from alumno y lo envia
-		        result.addObject("items", this.manageProductoService.getAll());
-		        //Se mapea el formulario para registrar un alumno
 		        result.addObject("producto",new Producto());
 		        return result;
 		    }
+			
+			@RequestMapping(value = "/ListarProductos",method=RequestMethod.GET)
+			public ModelAndView listProduct() {
+		        ModelAndView result = new ModelAndView("listarProductos");
+		        //Se hace un select * from alumno y lo envia
+		        result.addObject("items", this.manageProductoService.getAll());
+		        return result;
+		    }
+			
+		
 			
 			@RequestMapping(value = "/deleteProduct/{id}")
 			public String deleteProduct(@PathVariable(value="id")String id) {
@@ -68,13 +75,13 @@ public class ProductoController {
 			
 			@RequestMapping(value = "/findProduct",method=RequestMethod.GET)
 			public ModelAndView findProduct(@RequestParam("id") String id) {
-				ModelAndView mv = new ModelAndView("edit");
+				ModelAndView mv = new ModelAndView("ActualizarStock");
 				Producto producto=this.manageProductoService.find(Long.parseLong(id));
 				mv.addObject("producto",producto);
 		        return mv;
 		    }
 				
-		    @RequestMapping(value = {"/createProduct", "/updateProduct"}, method = RequestMethod.POST)
+		    @RequestMapping(value = {"/createProduct"}, method = RequestMethod.POST)
 			public String addProduct(@ModelAttribute("producto") @Valid Producto producto,BindingResult result, Map model) {
 		    	//alumno.getDateOfBirth().s;
 				if (result.hasErrors()) {
@@ -83,7 +90,19 @@ public class ProductoController {
 				}
 				this.manageProductoService.saveAndFlush(producto);
 				return "redirect:/RegistrarProducto";
-			}	
+			}
+		    
+		    
+		    @RequestMapping(value = {"/updateProduct"}, method = RequestMethod.POST)
+			public String updateProduct(@ModelAttribute("producto") @Valid Producto producto,BindingResult result, Map model) {
+		    	//alumno.getDateOfBirth().s;
+				if (result.hasErrors()) {
+					System.out.println("error");
+					 return "ActualizarStock";
+				}
+				this.manageProductoService.saveAndFlush(producto);
+				return "redirect:/ActualizarStock";
+			}
 		
 		
 		
