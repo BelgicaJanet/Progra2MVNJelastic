@@ -131,11 +131,10 @@
 		<plugins>
 		
 		
-		
 		<plugin>
 		  <groupId>com.jelastic</groupId>
 		  <artifactId>jelastic-maven-plugin</artifactId>
-		  <version>1.7-SNAPSHOT</version>
+		  <version>1.7</version>
 		  <configuration>
 		     <email>alvaro_huanca@usmp.pe</email>
 		     <password>pRpYBh248D</password>
