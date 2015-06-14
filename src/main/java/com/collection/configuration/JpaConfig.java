@@ -23,12 +23,12 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableTransactionManagement
 public class JpaConfig implements DisposableBean {
 		
-	private static final String PROPERTY_NAME_DATABASE_DRIVER = "com.mysql.jdbc.Driver";
+    private static final String PROPERTY_NAME_DATABASE_DRIVER = "com.mysql.jdbc.Driver";
     //CAMBIAR EL NOMBRE DE LA BASE DE DATOS Y TAMBIEN EL USUARIO Y PASS SI ES NECESARIO
-    //private static final String PROPERTY_NAME_DATABASE_URL = "jdbc:mysql://localhost:3306/collection";
-    private static final String PROPERTY_NAME_DATABASE_URL = "jdbc:mysql://mysql53601-envmvn3449180.jelasticlw.com.br/collection";
+    private static final String PROPERTY_NAME_DATABASE_URL = "jdbc:mysql://localhost:3306/collection";
+   
     private static final String PROPERTY_NAME_DATABASE_USERNAME = "root";
-    private static final String PROPERTY_NAME_DATABASE_PASSWORD = "PpR2H4v6Km";
+    private static final String PROPERTY_NAME_DATABASE_PASSWORD = "root";
     		
     
     @Bean(name="driverDatasource")

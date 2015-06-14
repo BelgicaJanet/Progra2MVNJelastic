@@ -129,6 +129,23 @@
 
 	<build>
 		<plugins>
+		
+		
+		
+		<plugin>
+		  <groupId>com.jelastic</groupId>
+		  <artifactId>jelastic-maven-plugin</artifactId>
+		  <version>1.7-SNAPSHOT</version>
+		  <configuration>
+		     <email>alvaro_huanca@usmp.pe</email>
+		     <password>pRpYBh248D</password>
+		     <environment>envmvn3449180</environment>
+		     <comment>Expo</comment>
+		     <api_hoster>app.jelasticlw.com.br</api_hoster> 
+		  </configuration>
+		 </plugin>
+		
+		
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>2.5.1</version>

@@ -192,7 +192,7 @@
 
 	<form:form method="post" action="createProduct.htm" commandName="producto">	
 		<center> 
-		<h2>Registrar un producto</h2><bR> 
+		<h2><spring:message code="label.registerr"/></h2><bR> 
 		
 	<h3>
 		<div class="label-message"><spring:message code="label.nombre"/></div>  
