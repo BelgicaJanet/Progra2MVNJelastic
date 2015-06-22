@@ -12,7 +12,7 @@ function validarDni(dni){
   }
 
 function validarEmail( email ) {
-    expr = /^([a-zA-Z0-9_\.\-])+\@(([gmail.com])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    expr = /^([a-zA-Z0-9_\.\-])+\@(([gmail])+\.)+([a-zA-Z0-9]{2,4})+$/;
     if ( !expr.test(email) ){
         alert("Error: Porfavor Ingrese su GMail Correctamente");
     document.getElementById("email").value="";

@@ -34,7 +34,8 @@ public class Producto implements Serializable{
 	private String marca;
 	
 	@NotNull
-	@DateTimeFormat(pattern="dd/MM/yyyy", iso=ISO.DATE)
+	//@DateTimeFormat(pattern="dd/MM/yyyy", iso=ISO.DATE)
+	@DateTimeFormat(pattern="dd/MM/YY" )
 	@Temporal(TemporalType.DATE)
 	private Date fecregistro;
 	
