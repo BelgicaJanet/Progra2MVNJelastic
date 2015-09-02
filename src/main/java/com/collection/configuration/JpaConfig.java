@@ -29,7 +29,13 @@ public class JpaConfig implements DisposableBean {
     private static final String PROPERTY_NAME_DATABASE_URL = "jdbc:mysql://mysql53601-envmvn3449180.jelasticlw.com.br/collection";
     private static final String PROPERTY_NAME_DATABASE_USERNAME = "root";
     private static final String PROPERTY_NAME_DATABASE_PASSWORD = "PpR2H4v6Km";
-    		
+    
+    
+    /**
+    private static final String PROPERTY_NAME_DATABASE_URL = "jdbc:mysql://mysql53601-envmvn3449180.jelasticlw.com.br/collection";
+    private static final String PROPERTY_NAME_DATABASE_USERNAME = "root";
+    private static final String PROPERTY_NAME_DATABASE_PASSWORD = "PpR2H4v6Km";
+    **/
     
     @Bean(name="driverDatasource")
     public DataSource driverDataSource() {
